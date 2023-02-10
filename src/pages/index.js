@@ -18,9 +18,10 @@ const Home = ({data}) => {
   return (
     <>
     <div>
-      <p className="">
-      Bunny Nalla Ha. BTW Toxic bi nalla ha
-      </p>
+      {/* Centre div */}
+      <div className="flex flex-col items-center justify-center h-screen w-screen py-2">
+        <p>Abid Bhai Chips khekha</p>
+      </div>
     </div>
     </>
   )
