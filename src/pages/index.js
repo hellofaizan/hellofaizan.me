@@ -19,7 +19,7 @@ const Home = ({data}) => {
     <>
     <div>
       <p className="text-3xl font-bold underline">
-        Bunny Nalla Ha
+        Bunny Nalla Ha. BTW Toxic bi nalla ha
       </p>
     </div>
     </>
