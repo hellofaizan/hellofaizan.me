@@ -20,7 +20,8 @@ const Home = ({data}) => {
     <div>
       {/* Centre div */}
       <div className="flex flex-col items-center justify-center h-screen w-screen py-2">
-        <p>Abid Bhai Chips khekha</p>
+        <p>Kinda Lazy. Will code sooner or later. Hehe</p>
+        Faizan
       </div>
     </div>
     </>
