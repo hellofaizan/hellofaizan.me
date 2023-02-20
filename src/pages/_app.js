@@ -11,6 +11,7 @@ export default function App({ Component, pageProps }) {
                 <link rel="icon" href="/faizan.png" />
                 <meta name="viewport" content="width=device-width,initial-scale=1" />
                 <meta name="theme-color" content="#171717" />
+                <meta name="google-site-verification" content="qF_JdHZXqVUD4Lr5OUovfDC7Tck7Kyw2rynWP97sa5M" />
                 <meta
                     name="keywords"
                     content="HelloFaizan, Faizan Blog, HelloFaizan blog, CuriousFaizan, web developer, github, typescript, nextjs"
