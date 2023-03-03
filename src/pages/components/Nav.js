@@ -20,10 +20,10 @@ const Nav = () => {
 
     return (
         <div className='flex justify-center'>
-            <div className='z-[999] fixed w-full md:w-[50rem] bg-white/60 dark:bg-[#12181d]/50 border dark:border-slate-600 backdrop-blur-lg rounded-lg overflow-hidden'>
+            <div className='z-[999] md:mt-4 fixed w-full md:w-[50rem] bg-white/60 dark:bg-[#292b2d]/40 border dark:border-slate-600 backdrop-blur-lg md:rounded-lg overflow-hidden'>
                 <nav aria-label="Site Nav" className="flex justify-between items-center px-6 py-2 " >
 
-                    <ul className="flex items-center gap-2 text-sm font-medium dark:text-gray-300 ">
+                    <ul className="flex items-center md:gap-2 text-sm font-medium dark:text-gray-300 ">
                         <li className='h-10 w-10'>
                             <Link href="/">
                                 <Image src="/Dfaizan.png" alt="HelloFaizan" width={50} height={50} />

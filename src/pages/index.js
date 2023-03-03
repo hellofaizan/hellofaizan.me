@@ -18,7 +18,7 @@ const Home = ({ data }) => {
 
   return (
     <>
-      <div className='container'>
+      <div className='container max-w-[760px] mx-auto mt-[90px]'>
         iygu jtfy yjtrf ytjf jytrcutrd ytyf yktf kuygliu jkufrd uygweuygf uyefuy
         iygu jtfy yjtrf ytjf jytrcutrd ytyf yktf kuygliu jkufrd uygweuygf uyefuy
         iygu jtfy yjtrf ytjf jytrcutrd ytyf yktf kuygliu jkufrd uygweuygf uyefuy
