@@ -22,7 +22,7 @@ export default function App({ Component, pageProps }) {
         <meta name="author" content="Hello Faizan" />
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
       </Head>
-      <div className='bg-[#ededed] dark:bg-[#282828] p-5 text-black h-screen dark:text-white'>
+      <div className='bg-[#ededed] dark:bg-[#282828] p-5 text-black h-full dark:text-white'>
         <Nav/>
         <Component {...pageProps} />
       </div>
