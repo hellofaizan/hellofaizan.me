@@ -8,22 +8,17 @@ export const getStaticProps = async () => {
   const data = await res.json()
 
   return {
-    props: { data },  
+    props: { data },
   }
 }
 
-const Home = ({data}) => {  
+const Home = ({ data }) => {
   console.log(data)
-  
+
   return (
     <>
-    <div>
-      {/* Centre div */}
-      <div className="flex flex-col items-center justify-center h-screen w-screen py-2">
-        <p>Kinda Lazy. Will code sooner or later. Hehe</p>
-        Faizan
+      <div className=''>
       </div>
-    </div>
     </>
   )
 }
