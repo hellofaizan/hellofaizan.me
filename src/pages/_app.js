@@ -9,18 +9,49 @@ export default function App({ Component, pageProps }) {
     <>
       <Head>
         <meta charSet="utf-8" />
-        <title>HelloFaizan - Software Enthusiast</title>
+        <title>HelloFaizan - Software Enthusias Portfolio</title>
         <link rel="icon" href="/faizan.png" />
         <meta name="viewport" content="width=device-width,initial-scale=1" />
         <meta name="theme-color" content="#171717" />
         <meta name="google-site-verification" content="qF_JdHZXqVUD4Lr5OUovfDC7Tck7Kyw2rynWP97sa5M" />
         <meta
           name="keywords"
-          content="HelloFaizan, Faizan Blog, HelloFaizan blog, CuriousFaizan, web developer, github, typescript, nextjs"
+          content="HelloFaizan, Faizan Blog, HelloFaizan blog, CuriousFaizan, web developer, github, typescript, nextjs, hellofaizan portfolio"
         />
-        <meta name="description" content="HelloFaizan - Software Enthusiast" />
+        <meta name="description" content="A full-stack developer, Building Seamless mobile & web applications." />
         <meta name="author" content="Hello Faizan" />
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+
+        
+        <meta property="og:title" content="HelloFaizan | Software Enthusiast" />
+        <meta property="og:site_name" content="HelloFaizan | Software Enthusiast Portfolio" />
+        <meta property="og:url" content="https://www.hellofaizan.me" />
+
+        <meta
+          property="og:description"
+          content="A full-stack developer, Building Seamless mobile & web applications."
+        />
+
+        <meta
+          property="og:image"
+          itemProp="image"
+          content="https://anshrathod.com/intro_image_meta.png"
+        />
+
+        <meta property="og:type" content="article" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@HelloFaizandev" />
+        <meta name="twitter:creator" content="@HelloFaizandev" />
+        <meta name="twitter:title" content="HelloFaizan | Software Enthusiast" />
+        <meta
+          name="twitter:description"
+          content="A full-stack developer, Building Seamless mobile & web applications."
+        />
+        <meta
+          name="twitter:image"
+          itemProp="image"
+          content="https://anshrathod.com/intro_image_meta.png"
+        />
       </Head>
       <div className='bg-[#ededed] dark:bg-[#282828] px-4 pb-5 w-full text-black h-full dark:text-white'>
         <Nav/>
