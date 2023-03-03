@@ -18,7 +18,7 @@ const Home = ({ data }) => {
 
   return (
     <>
-      <div className=''>
+      <div className='container'>
         iygu jtfy yjtrf ytjf jytrcutrd ytyf yktf kuygliu jkufrd uygweuygf uyefuy
         iygu jtfy yjtrf ytjf jytrcutrd ytyf yktf kuygliu jkufrd uygweuygf uyefuy
         iygu jtfy yjtrf ytjf jytrcutrd ytyf yktf kuygliu jkufrd uygweuygf uyefuy
