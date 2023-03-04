@@ -17,10 +17,14 @@ const Spotify = () => {
                 data
             }
     }, [data]) //data.data?.listening_to_spotify
+    if(data.data?.listening_to_spotify === false) {
+        return
+    }
   return (
     <div className="fixed left-2 bottom-2 w-[20rem] h-[7rem] hidden md:flex flex-col items-start justify-start">
             <h1 className="text-black dark:text-gray-100 font-semibold text-base mb-2 flex items-center justify-center">
                 Listening to Spotify
+                {/* Loading Dot Animation */}
                 <span className="ml-2 w-2 h-2">
                     <span className="absolute w-2 h-2 bg-red-600 rounded-full animate-ping" />
                     <span className="absolute w-2 h-2 bg-red-600 rounded-full" />
