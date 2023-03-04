@@ -53,7 +53,7 @@ export default function App({ Component, pageProps }) {
           content="https://anshrathod.com/intro_image_meta.png"
         />
       </Head>
-      <div className='bg-[#ededed] dark:bg-[#282828] pb-5 w-full text-black h-full dark:text-white'>
+      <div className='bg-[#ededed] dark:bg-[#282828] px-4 pb-5 w-full text-black h-full dark:text-white'>
         <Nav />
         <Component {...pageProps} />
       </div>
