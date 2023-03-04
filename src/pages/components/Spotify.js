@@ -33,18 +33,10 @@ const Spotify = () => {
 
             <div className="w-full h-[6rem] flex flex-row items-center justify-start">
                 {data?.data?.spotify?.album_art_url &&
-                    <Image
-                    width={100} height={100} src={data?.data?.spotify?.album_art_url} className="w-[4.5rem] h-[4.5rem] rounded-md mr-4 pointer-events-none"
-                        alt={data?.data?.spotify?.album}
-                    />
+                    <Image width={72} height={72} src={data?.data?.spotify?.album_art_url} className="w-[4.5rem] h-[4.5rem] rounded-md mr-4 pointer-events-none" alt={data?.data?.spotify?.album} />
                 }
                 <div className="w-56 h-full flex flex-col items-start justify-center">
-                    <a
-                        href={`https://open.spotify.com/track/${data?.data?.spotify?.track_id}`}
-                        target="_blank"
-                        rel="noreferrer"
-                        className="w-full font-medium text-gray-900 dark:text-[#e1eafd] hover:underline truncate"
-                    >
+                    <a href={`https://open.spotify.com/track/${data?.data?.spotify?.track_id}`} target="_blank" rel="noreferrer" className="w-full font-medium text-gray-900 dark:text-[#e1eafd] hover:underline truncate" >
                         {data?.data?.spotify?.song}
                     </a>
                     <p className="w-full text-gray-600 dark:text-[#cad2e0] font-normal text-sm truncate">

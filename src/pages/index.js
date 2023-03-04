@@ -3,6 +3,7 @@ import { Inter } from '@next/font/google'
 import Link from 'next/link'
 import RepoItem from './components/RepoItems'
 import Spotify from './components/Spotify'
+import Online from './components/Online'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -10,7 +11,7 @@ const Home = ({ stats, topRepos }) => {
   return (
     <>
       <div className='container flex flex-col max-w-[760px] mx-auto md:mt-32 mt-28'>
-        <h1 className='font-bold text-3xl sm:text-5xl mb-3'>Hey! 👋 Faizan here</h1>
+        <div className='flex flex-row items-center gap-2'><h1 className='font-bold text-3xl sm:text-5xl mb-3'>Hey! 👋 Faizan here</h1><Online/></div>
         <p className="text-gray-800 dark:text-gray-300 leading-6 tracking-wide mb-12">
           I&apos;m a self-taught software engineer from the Kashmir India. I&apos;m currently pursuing full-stack web
           development and Android Development to create stunning user experiences on the front-end, and scalable and secure infrastructure
