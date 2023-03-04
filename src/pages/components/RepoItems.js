@@ -3,7 +3,7 @@ import { BiGitRepoForked } from "react-icons/bi";
 
 const Languages = {
     TypeScript: "#2b7489",
-    Python: "#3572A5",
+    Python: "#4584b6",
     JavaScript: "#FFFF00",
 };
 
