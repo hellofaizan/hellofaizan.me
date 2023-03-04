@@ -23,6 +23,11 @@ module.exports = {
         source: '/mail',
         destination: 'mailto:faizancurious@gmail.com',
         permanent: true
+      },
+      {
+        source: '/all',
+        destination: 'https://i.hellofaizan.me',
+        permanent: true
       }
     ]
   },

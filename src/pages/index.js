@@ -43,7 +43,7 @@ const Home = ({ stats, topRepos }) => {
       </div>
 
       <div className="sm:flex hidden fixed right-0 bottom-0 p-4">
-        <Link href={"/discord"} className="rounded-lg bg-indigo-600 px-4 py-3 text-white shadow-lg">
+        <Link href={"/discord"} target="_blank" className="rounded-lg bg-indigo-600 px-4 py-3 text-white shadow-lg">
           <p className='text-base'>I started a community on Discord. Join Now <i className='bi bi-discord'></i></p>
         </Link>
       </div>

@@ -14,7 +14,7 @@ const Nav = () => {
                     ? "bg-black/10 dark:bg-[#c8c8dc]/10"
                     : "bg-transparent hover:bg-gray-700/5 dark:hover:bg-[#c8c8dc]/5 dark:text-white",
                 "rounded-lg px-3 py-2"
-            )} href={link}> {name} </Link>
+            )} href={link} > {name} </Link>
         );
     }
 
@@ -38,7 +38,7 @@ const Nav = () => {
                         </li>
 
                         <li className='px-2 bg-transparent hover:bg-gray-700/5 dark:hover:bg-[#c8c8dc]/5 dark:text-white rounded-lg'>
-                            <Link className="inline-flex items-baseline justify-center gap-1 rounded-lg px-2 py-2" href="" target="_blank" passHref >
+                            <Link className="inline-flex items-baseline justify-center gap-1 rounded-lg px-2 py-2" href="/all" target="_blank" passHref >
                                 External
                                 <i className='bi bi-box-arrow-up-right h-4 w-4'></i>
                             </Link>
@@ -46,10 +46,10 @@ const Nav = () => {
                     </ul>
 
                     <ul className='hidden sm:flex items-center gap-4 text-xl font-medium dark:text-gray-300'>
-                        <li><Link href={"/discord"}><i className='bi bi-discord'></i></Link></li>
-                        <li><Link href={"/github"}><i className='bi bi-github'></i></Link></li>
-                        <li><Link href={"/twitter"}><i className='bi bi-twitter'></i></Link></li>
-                        <li><Link href={"/mail"}><i className='bi bi-envelope-at'></i></Link></li>
+                        <li><Link href={"/discord"} target="_blank"><i className='bi bi-discord'></i></Link></li>
+                        <li><Link href={"/github"} target="_blank"><i className='bi bi-github'></i></Link></li>
+                        <li><Link href={"/twitter"} target="_blank"><i className='bi bi-twitter'></i></Link></li>
+                        <li><Link href={"/mail"} target="_blank"><i className='bi bi-envelope-at'></i></Link></li>
                     </ul>
                 </nav>
                 
