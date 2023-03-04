@@ -2,6 +2,7 @@ import React from 'react'
 import { Inter } from '@next/font/google'
 import Link from 'next/link'
 import RepoItem from './components/RepoItems'
+import Spotify from './components/Spotify'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -41,6 +42,8 @@ const Home = ({ stats, topRepos }) => {
             </div>
 
       </div>
+
+      <Spotify/>
 
       <div className="sm:flex hidden fixed right-0 bottom-0 p-4">
         <Link href={"/discord"} target="_blank" className="rounded-lg bg-indigo-600 px-4 py-3 text-white shadow-lg">
