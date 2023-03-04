@@ -39,32 +39,32 @@ const Online = () => {
     // }
     if (data?.data?.discord_status === "dnd") {
         return (
-            <span className="ml-2 w-2 h-2">
-                <span className="absolute w-2 h-2 bg-red-600 rounded-full animate-ping" />
-                <span className="absolute w-2 h-2 bg-red-600 rounded-full" />
+            <span className="ml-2 w-3 h-3">
+                <span className="absolute w-3 h-3 bg-red-600 rounded-full animate-ping" />
+                <span className="absolute w-3 h-3 bg-red-600 rounded-full" />
             </span>
         )
     }
     if (data?.data?.discord_status === "idle") {
         return (
-            <span className="ml-2 w-2 h-2">
-                <span className="absolute w-2 h-2 bg-yellow-400 rounded-full animate-ping" />
-                <span className="absolute w-2 h-2 bg-yellow-400 rounded-full" />
+            <span className="ml-2 w-3 h-3">
+                <span className="absolute w-3 h-3 bg-yellow-400 rounded-full animate-ping" />
+                <span className="absolute w-3 h-3 bg-yellow-400 rounded-full" />
             </span>
         )
     }
     if (data?.data?.discord_status === "online") {
         return (
-            <span className="ml-2 w-2 h-2">
-                <span className="absolute w-2 h-2 bg-green-500 rounded-full animate-ping" />
-                <span className="absolute w-2 h-2 bg-green-500 rounded-full" />
+            <span className="ml-2 w-3 h-3">
+                <span className="absolute w-3 h-3 bg-green-500 rounded-full animate-ping" />
+                <span className="absolute w-3 h-3 bg-green-500 rounded-full" />
             </span>
         )
     }
     return (
-        <span className="ml-2 w-2 h-2">
-            <span className="absolute w-2 h-2 bg-gray-500 rounded-full animate-ping" />
-            <span className="absolute w-2 h-2 bg-gray-500 rounded-full" />
+        <span className="ml-2 w-3 h-3">
+            <span className="absolute w-3 h-3 bg-gray-500 rounded-full animate-ping" />
+            <span className="absolute w-3 h-3 bg-gray-500 rounded-full" />
         </span>
     )
 }
