@@ -2,6 +2,7 @@ import '@/styles/globals.css'
 import Head from 'next/head'
 import "bootstrap-icons/font/bootstrap-icons.css";
 import Nav from './components/Nav';
+import Link from 'next/link';
 
 
 export default function App({ Component, pageProps }) {
@@ -10,7 +11,7 @@ export default function App({ Component, pageProps }) {
       <Head>
         <meta charSet="utf-8" />
         <title>HelloFaizan - Software Enthusias Portfolio</title>
-        <link rel="icon" href="/faizan.png" />
+        <link rel="icon" href="/Dfaizan.png" />
         <meta name="viewport" content="width=device-width,initial-scale=1" />
         <meta name="theme-color" content="#171717" />
         <meta name="google-site-verification" content="qF_JdHZXqVUD4Lr5OUovfDC7Tck7Kyw2rynWP97sa5M" />
@@ -22,7 +23,7 @@ export default function App({ Component, pageProps }) {
         <meta name="author" content="Hello Faizan" />
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
 
-        
+
         <meta property="og:title" content="HelloFaizan | Software Enthusiast" />
         <meta property="og:site_name" content="HelloFaizan | Software Enthusiast Portfolio" />
         <meta property="og:url" content="https://www.hellofaizan.me" />
@@ -54,7 +55,7 @@ export default function App({ Component, pageProps }) {
         />
       </Head>
       <div className='bg-[#ededed] dark:bg-[#282828] px-4 pb-5 w-full text-black h-full dark:text-white'>
-        <Nav/>
+        <Nav />
         <Component {...pageProps} />
       </div>
     </>

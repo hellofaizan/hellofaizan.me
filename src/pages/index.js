@@ -1,6 +1,6 @@
 import React from 'react'
 import { Inter } from '@next/font/google'
-import Nav from './components/Nav'
+import Link from 'next/link'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -25,8 +25,13 @@ const Home = ({ data }) => {
           development and Android Development to create stunning user experiences on the front-end, and scalable and secure infrastructure
           on the backend.
         </p>
-        <h1 className='font-bold text-3xl sm:text-5xl mb-3'>What&apos;s on my mind 🤔</h1>
+        
       </div>
+      <Link href={"/discord"} className="sm:flex hidden fixed right-0 bottom-0 p-4">
+        <div className="rounded-lg bg-indigo-600 px-4 py-3 text-white shadow-lg">
+          <p className='text-base'>I started a community on Discord. Join Now <i className='bi bi-discord'></i></p>
+        </div>
+      </Link>
     </>
   )
 }

@@ -1,27 +1,29 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
-  reactStrictMode: true,
-}
 
 module.exports = {
-  nextConfig,
+  reactStrictMode: true,
   async redirects() {
     return [
       {
         source: '/github',
-        destination: 'https://github.com/cnrad',
+        destination: 'https://github.com/hellofaizan',
         permanent: true,
       },
       {
         source: '/twitter',
-        destination: 'https://twitter.com/notcnrad',
+        destination: 'https://twitter.com/hellofaizandev',
         permanent: true,
       },
       {
         source: '/discord',
-        destination: 'https://linkedin.com/in/cnrad',
-        permanent: true,
+        destination: 'https://discord.gg/vUHMxPvege',
+        permanent: true
       },
+      {
+        source: '/mail',
+        destination: 'mailto:faizancurious@gmail.com',
+        permanent: true
+      }
     ]
   },
 }

@@ -46,12 +46,13 @@ const Nav = () => {
                     </ul>
 
                     <ul className='hidden sm:flex items-center gap-4 text-xl font-medium dark:text-gray-300'>
-                        <li><Link href={""}><i className='bi bi-discord'></i></Link></li>
-                        <li><Link href={""}><i className='bi bi-github'></i></Link></li>
-                        <li><Link href={""}><i className='bi bi-twitter'></i></Link></li>
-                        <li><Link href={""}><i className='bi bi-envelope-at'></i></Link></li>
+                        <li><Link href={"/discord"}><i className='bi bi-discord'></i></Link></li>
+                        <li><Link href={"/github"}><i className='bi bi-github'></i></Link></li>
+                        <li><Link href={"/twitter"}><i className='bi bi-twitter'></i></Link></li>
+                        <li><Link href={"/mail"}><i className='bi bi-envelope-at'></i></Link></li>
                     </ul>
                 </nav>
+                
             </div>
         </div>
     )
