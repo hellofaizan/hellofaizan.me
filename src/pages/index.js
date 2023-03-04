@@ -22,6 +22,7 @@ const Home = ({ stats, topRepos }) => {
           In my free time, I enjoy creating open source projects on{" "}
           <a
             href="https://github.com/hellofaizan"
+            target={"_blank"}
             rel="noreferrer"
             className="font-semibold text-violet-500 hover:underline"
           >
