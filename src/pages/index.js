@@ -31,7 +31,7 @@ const Home = ({ stats, topRepos }) => {
           are some of my most popular repositories.
         </p>
         <div className="w-full grid grid-cols-1 md:grid-cols-2 grid-rows-2 md:grid-rows-1 mb-12 gap-2">
-                {topRepos.map((repo) => {
+                {topRepos && topRepos.map((repo) => {
                     return (
                         <RepoItem
                             name={repo.name} desc={repo.description} lang={repo.language} stars={repo.stargazers_count} forks={repo.forks_count} key={repo.name}
