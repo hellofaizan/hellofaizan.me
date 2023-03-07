@@ -10,6 +10,12 @@ module.exports = {
         port: '',
         pathname: '/image/**',
       },
+      {
+        protocol: 'https',
+        hostname: 'media.discordapp.net',
+        port: '',
+        pathname: '/external/**',
+      },
     ],
   },
   async redirects() {

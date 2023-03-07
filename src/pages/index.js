@@ -4,19 +4,19 @@ import Link from 'next/link'
 import RepoItem from './components/RepoItems'
 import Spotify from './components/Spotify'
 import Online from './components/Online'
-
-const inter = Inter({ subsets: ['latin'] })
+import Work from './components/Work'
 
 const Home = ({ stats, topRepos }) => {
   return (
     <>
       <div className='container flex flex-col max-w-[760px] mx-auto md:mt-32 mt-24 sm:mt-32'>
         <div className='flex flex-row items-center gap-2'><h1 className='font-bold text-[32px] sm:text-5xl mb-3'>Hey! 👋 Faizan here</h1><Online/></div>
-        <p className="text-gray-800 dark:text-gray-300 leading-6 tracking-wide mb-12">
+        <p className="text-gray-800 dark:text-gray-300 leading-6 tracking-wide mb-8">
           I&apos;m a self-taught software engineer from the Kashmir India. I&apos;m currently pursuing full-stack web
           development and Android Development to create stunning user experiences on the front-end, and scalable and secure infrastructure
           on the backend.
         </p>
+        <Work/>
         <h1 className='font-bold text-3xl sm:text-5xl mb-3'>Projects 🛠️</h1>
         <p className="text-gray-800 dark:text-gray-300 leading-6 tracking-wide mb-4">
           In my free time, I enjoy creating open source projects on{" "}

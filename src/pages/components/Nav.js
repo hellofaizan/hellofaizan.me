@@ -26,7 +26,7 @@ const Nav = () => {
                     <ul className="flex items-center md:gap-1 text-md font-medium dark:text-gray-300 ">
                         <li className='h-10 w-10'>
                             <Link href="/">
-                                <Image src="/Dfaizan.png" alt="HelloFaizan" width={50} height={50} />
+                                <Image src="/Dfaizan.png" title='Home Screen' alt="HelloFaizan" width={50} height={50} />
                             </Link>
                         </li>
                         <li className="dark:hover:text-gray-100 ">
