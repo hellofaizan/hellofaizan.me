@@ -1,7 +1,6 @@
 import React from 'react'
 import { useEffect, useState } from 'react'
 import axios from 'axios'
-import { useMemo } from 'react'
 
 const Online = () => {
     const [data, setData] = useState("")
@@ -17,14 +16,14 @@ const Online = () => {
 
     if (data?.data?.active_on_discord_desktop === false && data?.data?.active_on_discord_mobile === false) {
         return (
-            <span className="ml-2 w-3 h-3">
+            <span className="ml-2 w-3 h-3" title={data.data?.discord_status}>
                 <span className="absolute w-3 h-3 bg-gray-500 rounded-full animate-ping" />
                 <span className="absolute w-3 h-3 bg-gray-500 rounded-full" />
             </span>
         )
     }
     return (
-        <span className="ml-2 w-3 h-3">
+        <span className="ml-2 w-3 h-3" title={data.data?.discord_status}>
             <span className="absolute w-3 h-3 bg-green-500 rounded-full animate-ping" />
             <span className="absolute w-3 h-3 bg-green-500 rounded-full" />
         </span>
