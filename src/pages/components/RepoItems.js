@@ -10,7 +10,7 @@ const Languages = {
 
 const RepoItem = (props) => {
     return (
-        <div>
+        <div className="hover:scale-[1.01]">
             <a href={`https://github.com/hellofaizan/${props.name}`} rel="noreferrer" target="_blank">
                 <div className="flex flex-col h-36 p-4 bg-white/10 dark:bg-black/10 rounded-md border border-slate-400 hover:border-slate-700 dark:border-slate-800 dark:hover:border-slate-600 transition-colors duration-75 cursor-pointer">
                     
