@@ -24,12 +24,16 @@ const Nav = () => {
                 <nav aria-label="Site Nav" className="flex justify-between items-center px-6 py-3 " >
 
                     <ul className="flex items-center md:gap-1 text-md font-medium dark:text-gray-300 ">
-                        <li className='h-10 w-10'>
+                        <li className='h-10 w-10 mr-2'>
                             <Link href="/">
                                 <Image src="/Dfaizan.png" title='Home Screen' alt="HelloFaizan" width={50} height={50} />
                             </Link>
                         </li>
                         <li className="dark:hover:text-gray-100 ">
+                            <LandingBtn name="Home" link="/" selected={router.pathname === "/"} />
+                        </li>
+
+                        <li className='dark:hover:text-gray-100 '>
                             <LandingBtn name="Contact" link="/Contact" selected={router.pathname === "/Contact"} />
                         </li>
 
@@ -37,12 +41,7 @@ const Nav = () => {
                             <LandingBtn name="Projects" link="/Projects" selected={router.pathname === "/Projects"} />
                         </li>
 
-                        <li className='px-2 bg-transparent hover:bg-gray-700/5 dark:hover:bg-[#c8c8dc]/5 dark:text-white rounded-lg'>
-                            <Link className="inline-flex items-baseline justify-center gap-1 rounded-lg px-2 py-2" href="/all" target="_blank" passHref >
-                                External
-                                <i className='bi bi-box-arrow-up-right h-4 w-4'></i>
-                            </Link>
-                        </li>
+
                     </ul>
 
                     <ul className='hidden sm:flex items-center gap-4 text-xl font-medium dark:text-gray-300'>
@@ -52,7 +51,7 @@ const Nav = () => {
                         <li><Link href={"/mail"} target="_blank"><i className='bi bi-envelope-at'></i></Link></li>
                     </ul>
                 </nav>
-                
+
             </div>
         </div>
     )
