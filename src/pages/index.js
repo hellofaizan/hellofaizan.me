@@ -56,7 +56,7 @@ const Home = ({ stats, topRepos }) => {
   )
 }
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
   const stats = await fetch(`https://api.github-star-counter.workers.dev/user/hellofaizan`).then(res => res.json());
   const repos = await fetch(`https://api.github.com/users/hellofaizan/repos?type=owner&per_page=100`).then(res =>
     res.json()
