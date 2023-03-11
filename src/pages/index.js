@@ -2,7 +2,6 @@ import React from 'react'
 import { Inter } from '@next/font/google'
 import Link from 'next/link'
 import RepoItem from './components/RepoItems'
-import Spotify from './components/Spotify'
 import Online from './components/Online'
 import Work from './components/Work'
 import { useState, useEffect } from 'react'
@@ -36,7 +35,7 @@ const Home = () => {
 
   return (
     <>
-<div className='container overflow-hidden flex flex-col max-w-[760px] mx-auto md:mt-32 mt-24 sm:mt-32'>
+<div className='container flex flex-col max-w-[760px] mx-auto md:mt-32 mt-24 sm:mt-32'>
         <div className='flex flex-row items-center gap-2'><h1 className='font-bold text-[32px] sm:text-5xl mb-3'>Hey! 👋 Faizan here</h1><Online /></div>
         <p className="text-gray-800 dark:text-gray-300 leading-6 tracking-wide mb-8">
           I&apos;m a self-taught software engineer from the Kashmir India. I&apos;m currently pursuing full-stack web
@@ -75,8 +74,6 @@ const Home = () => {
         </div>
 
       </div>
-
-      <Spotify />
 
       <div className="sm:flex hidden fixed right-0 bottom-0 p-4">
         <Link href={"/discord"} target="_blank" className="rounded-lg bg-indigo-600 px-4 py-3 text-white shadow-lg">

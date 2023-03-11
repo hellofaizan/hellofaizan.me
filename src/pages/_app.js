@@ -2,6 +2,7 @@ import '@/styles/globals.css'
 import Head from 'next/head'
 import "bootstrap-icons/font/bootstrap-icons.css";
 import Nav from './components/Nav';
+import Spotify from './components/Spotify';
 
 
 export default function App({ Component, pageProps }) {
@@ -56,6 +57,7 @@ export default function App({ Component, pageProps }) {
       <div className='bg-[#ededed] dark:bg-[#282828] px-4 pb-5 w-full min-h-screen text-black h-full dark:text-white'>
         <Nav />
         <Component {...pageProps} />
+        <Spotify />
       </div>
     </>
   )
