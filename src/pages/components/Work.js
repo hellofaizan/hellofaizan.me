@@ -21,7 +21,7 @@ const Work = () => {
     (data?.data?.listening_to_spotify === false) ? actt = 1 : actt = 2
 
 
-    if (data?.data?.activities[actt]?.type === 0) {
+    if (data?.data?.activities[actt]?.type === 0 && data?.data?.activities[actt]?.name === "Visual Studio Code") {
         const large_image = data?.data?.activities[actt]?.assets?.large_image
         const small_image = data?.data?.activities[actt]?.assets?.small_image
 
