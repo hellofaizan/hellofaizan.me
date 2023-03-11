@@ -33,11 +33,11 @@ export default function App({ Component, pageProps }) {
           content="A full-stack developer, Building Seamless mobile & web applications."
         />
 
-        <meta
+        {/* <meta
           property="og:image"
           itemProp="image"
           content="https://anshrathod.com/intro_image_meta.png"
-        />
+        /> */}
 
         <meta property="og:type" content="article" />
         <meta name="twitter:card" content="summary_large_image" />
@@ -48,11 +48,11 @@ export default function App({ Component, pageProps }) {
           name="twitter:description"
           content="A full-stack developer, Building Seamless mobile & web applications."
         />
-        <meta
+        {/* <meta
           name="twitter:image"
           itemProp="image"
           content="https://anshrathod.com/intro_image_meta.png"
-        />
+        /> */}
       </Head>
       <div className='bg-[#ededed] dark:bg-[#282828] px-4 pb-5 w-full min-h-screen text-black h-full dark:text-white'>
         <Nav />
