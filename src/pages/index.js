@@ -64,7 +64,7 @@ export async function getStaticProps() {
 
   const topRepos = repos
     .sort((a, b) => b.stargazers_count - a.stargazers_count)
-    .slice(0, 4);
+    .slice(0, 6);
 
   return {
     props: { stats, topRepos },
