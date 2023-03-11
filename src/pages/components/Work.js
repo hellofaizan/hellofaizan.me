@@ -35,7 +35,6 @@ const Work = () => {
 
         return (
             <>
-                <h1 className='font-bold text-3xl sm:text-5xl mb-4'>🧑‍💻 Working on...</h1>
                 <div className="flex items-center md:space-x-7 space-x-4 mb-10">
                     <div className='relative'>
                         <Image src={`https://media.discordapp.net/${large_image.replace("mp:", "")}`} width="500" title={data?.data?.activities[actt]?.assets?.large_text} height="500" className='md:h-32 md:w-32 sm:h-24 w-24 rounded-[10px]' alt="Visual Studio Code" />
