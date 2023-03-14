@@ -35,7 +35,7 @@ const Work = () => {
 
         return (
             <>
-                <div className="flex items-center md:space-x-7 space-x-4 mb-10">
+                <div className="flex items-center md:space-x-7 space-x-4 mt-5">
                     <div className='relative'>
                         <Image src={`https://media.discordapp.net/${large_image.replace("mp:", "")}`} width="500" title={data?.data?.activities[actt]?.assets?.large_text} height="500" className='md:h-32 md:w-32 sm:h-24 w-24 rounded-[10px]' alt="Visual Studio Code" />
                         <Image src={`https://media.discordapp.net/${small_image.replace("mp:", "")}`} title={(data?.data?.activities[actt]?.assets?.large_text) ? data?.data?.activities[actt]?.name : data?.data?.activities[actt]?.assets?.small_text} width="500" height="500" className='md:h-12 md:w-12 h-10 w-10 rounded-full absolute bottom-0 right-0 -mb-2 -mr-2 border-4 border-transparent' alt="Visual Studio Code" />

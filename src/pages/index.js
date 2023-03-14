@@ -43,11 +43,11 @@ const Home = () => {
           on the backend.
         </p>
         <h1 className='font-bold text-3xl sm:text-5xl mb-3'>What I Do 💭</h1>
-        <p className="text-gray-800 dark:text-gray-300 leading-6 tracking-wide mb-8">
+        <p className="text-gray-800 dark:text-gray-300 leading-6 tracking-wide">
         I&apos;m passionate about everything technology; from designing and developing software, to understanding how the many moving parts of the internet work together, to cybersecurity, systems, programming, and so much more. I strive to learn more about these things every day, and utilize my knowledge to further understand how or why the technology around us works.
         </p>
         <Work />
-        <h1 className='font-bold text-3xl sm:text-5xl mb-3'>Projects 🛠️</h1>
+        <h1 className='font-bold text-3xl sm:text-5xl mb-3 mt-8'>Projects 🛠️</h1>
         <p className="text-gray-800 dark:text-gray-300 leading-6 tracking-wide mb-4">
           In my free time, I enjoy creating open source projects on{" "}
           <a
