@@ -27,7 +27,7 @@ const Contact = () => {
     }
 
     const params = {
-      username: "dc.hellofaizan.me",
+      username: "hellofaizan.me",
       content: "<@890232380265222215>",
       embeds: [msgEmbed]
     }
