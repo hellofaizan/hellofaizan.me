@@ -1,5 +1,5 @@
 import React from 'react'
-import { Inter } from '@next/font/google'
+import Mspotify from './components/Mspotify'
 import Link from 'next/link'
 import RepoItem from './components/RepoItems'
 import Online from './components/Online'
@@ -63,7 +63,7 @@ const Home = () => {
           GitHub, and <span className="font-bold text-black dark:text-slate-200">{stats.forks}</span> forks. Below
           are some of my most popular repositories.
         </p>
-        <div className="w-full grid grid-cols-1 md:grid-cols-2 grid-rows-2 md:grid-rows-1 mb-12 gap-2">
+        <div className="w-full grid grid-cols-1 md:grid-cols-2 grid-rows-2 md:grid-rows-1 mb-6 gap-2">
           {topRepos && topRepos.map((repo) => {
             return (
               <RepoItem
@@ -72,6 +72,7 @@ const Home = () => {
             );
           })}
         </div>
+        <Mspotify/>
 
       </div>
 
