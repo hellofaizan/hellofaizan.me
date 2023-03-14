@@ -55,7 +55,7 @@ const Contact = () => {
         </p>
         <TimeStatus />
 
-        <div className='relative overflow-hidden rounded-lg p-5 mb-10 border border-gray-500' >
+        <div className='relative rounded-lg mb-5' >
 
           <div>
             <label htmlFor="email" className="text-sm font-medium">Enter Discord Id or Email Address</label>
