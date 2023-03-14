@@ -24,7 +24,7 @@ const Home = () => {
         const topRepos = res1.data
           .sort((a, b) => b.stargazers_count - a.stargazers_count)
           .slice(0, 6);
-          setTopRepos(topRepos)
+        setTopRepos(topRepos)
       }
       )
       .catch((err1) => {
@@ -35,8 +35,8 @@ const Home = () => {
 
   return (
     <>
-<div className='container flex flex-col max-w-[760px] mx-auto md:mt-32 mt-24 sm:mt-32'>
-        <div className='flex flex-row items-center gap-2'><h1 className='font-bold text-[32px] sm:text-5xl mb-3'>Hey! 👋 Faizan here</h1><Online /></div>
+      <div className='container flex flex-col max-w-[760px] mx-auto md:mt-32 mt-24 sm:mt-32'>
+        <div className='flex flex-row items-center gap-2'><h1 className='font-bold text-[32px] sm:text-5xl'>Hey! 👋 Faizan here</h1><Online /></div>
         <p className="text-gray-800 dark:text-gray-300 leading-6 tracking-wide mb-8">
           I&apos;m a self-taught software engineer from the Kashmir India. I&apos;m currently pursuing full-stack web
           development and Android Development to create stunning user experiences on the front-end, and scalable and secure infrastructure
@@ -44,7 +44,7 @@ const Home = () => {
         </p>
         <h1 className='font-bold text-3xl sm:text-5xl mb-3'>What I Do 💭</h1>
         <p className="text-gray-800 dark:text-gray-300 leading-6 tracking-wide">
-        I&apos;m passionate about everything technology; from designing and developing software, to understanding how the many moving parts of the internet work together, to cybersecurity, systems, programming, and so much more. I strive to learn more about these things every day, and utilize my knowledge to further understand how or why the technology around us works.
+          I&apos;m passionate about everything technology; from designing and developing software, to understanding how the many moving parts of the internet work together, to cybersecurity, systems, programming, and so much more. I strive to learn more about these things every day, and utilize my knowledge to further understand how or why the technology around us works.
         </p>
         <Work />
         <h1 className='font-bold text-3xl sm:text-5xl mb-3 mt-8'>Projects 🛠️</h1>
@@ -72,7 +72,7 @@ const Home = () => {
             );
           })}
         </div>
-        <Mspotify/>
+        <Mspotify />
 
       </div>
 
