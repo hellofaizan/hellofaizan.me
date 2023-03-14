@@ -36,7 +36,7 @@ const Home = () => {
   return (
     <>
       <div className='container flex flex-col max-w-[760px] mx-auto md:mt-32 mt-24 sm:mt-32'>
-        <div className='flex flex-row items-center gap-2'><h1 className='font-bold text-[32px] sm:text-5xl'>Hey! 👋 Faizan here</h1><Online /></div>
+        <div className='flex flex-row items-center gap-3 mb-3'><h1 className='font-bold text-[32px] sm:text-5xl'>Hey! 👋 Faizan here</h1><Online /></div>
         <p className="text-gray-800 dark:text-gray-300 leading-6 tracking-wide mb-8">
           I&apos;m a self-taught software engineer from the Kashmir India. I&apos;m currently pursuing full-stack web
           development and Android Development to create stunning user experiences on the front-end, and scalable and secure infrastructure
