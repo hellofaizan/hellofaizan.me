@@ -10,7 +10,7 @@ export default function App({ Component, pageProps }) {
     <>
       <Head>
         <meta charSet="utf-8" />
-        <title>HelloFaizan - Software Enthusias Portfolio</title>
+        <title>HelloFaizan - Software Enthusiat Portfolio</title>
         <link rel="icon" href="/Dfaizan.png" />
         <meta name="viewport" content="width=device-width,initial-scale=1" />
         <meta name="theme-color" content="#171717" />
