@@ -6,4 +6,4 @@
 
 ## [Website Demo](https://www.hellofaizan.me)
 
-(https://media.discordapp.net/attachments/1065518726855807067/1085395237624631317/Screenshot_2023-03-11_131224.png)
+[](https://media.discordapp.net/attachments/1065518726855807067/1085395237624631317/Screenshot_2023-03-11_131224.png)
