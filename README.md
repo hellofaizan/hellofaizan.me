@@ -1,4 +1,4 @@
-## [hellofaizan.me](https://www.hellofaizan.me)
+# [hellofaizan.me](https://www.hellofaizan.me)
 
 ### This is my portfolio website that I designed using [Tailwind CSS](https://tailwindcss.com/) and used [Next JS](https://nextjs.org/). I'm in love with Next JS. I made it Open Source so that people can also contribute.
 
