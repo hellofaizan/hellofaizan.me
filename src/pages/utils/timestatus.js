@@ -7,7 +7,7 @@ const TimeStatus = () => {
 
     function updateTime() {
         let current = new Date().toLocaleString("en-In", { timeZone: "Asia/Kolkata" });
-        setTime(`${current.slice(-11, -6)}${current.slice(-3, -1)}.m.`);
+        setTime(`${current.slice(-11, -6)}${current.slice(-3, -1)}.m`);
         setTimeout(updateTime, 60 * 1000);
 
         if (new Date().getHours() < 7) setAwake(false);
