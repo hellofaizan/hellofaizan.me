@@ -11,7 +11,7 @@ export default function App({ Component, pageProps }) {
       <Head>
         <meta charSet="utf-8" />
         <title>HelloFaizan - Software Enthusiat Portfolio</title>
-        <link rel="icon" href="/Dfaizan.png" />
+        <link rel="icon" href="https://hellofaizan.me//Dfaizan.png" />
         <meta name="viewport" content="width=device-width,initial-scale=1" />
         <meta name="theme-color" content="#171717" />
         <meta name="google-site-verification" content="qF_JdHZXqVUD4Lr5OUovfDC7Tck7Kyw2rynWP97sa5M" />
@@ -33,11 +33,11 @@ export default function App({ Component, pageProps }) {
           content="A full-stack developer, Building Seamless mobile & web applications."
         />
 
-        {/* <meta
+        <meta
           property="og:image"
           itemProp="image"
-          content="https://anshrathod.com/intro_image_meta.png"
-        /> */}
+          content="https://hellofaizan.me/faizaan.png"
+        />
 
         <meta property="og:type" content="article" />
         <meta name="twitter:card" content="summary_large_image" />
@@ -48,11 +48,11 @@ export default function App({ Component, pageProps }) {
           name="twitter:description"
           content="A full-stack developer, Building Seamless mobile & web applications."
         />
-        {/* <meta
+        <meta
           name="twitter:image"
           itemProp="image"
-          content="https://anshrathod.com/intro_image_meta.png"
-        /> */}
+          content="https://hellofaizan.me/faizaan.png"
+        />
       </Head>
       <div className='bg-[#ededed] dark:bg-[#282828] px-4 pb-5 w-full min-h-screen text-black h-full dark:text-white'>
         <Nav />
