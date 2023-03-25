@@ -36,10 +36,10 @@ const Nav = () => {
                         <li className='dark:hover:text-gray-100 '>
                             <LandingBtn name="Contact" link="/contact" selected={router.pathname === "/contact"} />
                         </li>
-
+{/* 
                         <li className='dark:hover:text-gray-100 '>
                             <LandingBtn name="Experiments" link="/experiments" selected={router.pathname === "/experiments"} />
-                        </li>
+                        </li> */}
 
 
                     </ul>
