@@ -87,7 +87,7 @@ const Home = ({mosam}) => {
 }
 
 export const getServerSideProps = async () => {
-  const res = await fetch(`https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/33.7261747%2C74.8272185?unitGroup=metric&include=current&key=${process.env.NEXT_WEATHER_DATA_API}&contentType=json`)
+  const res = await fetch(`https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/33.7261747%2C74.8272185?unitGroup=metric&include=current&key=${process.env.NEXT_PUBLIC_WEATHER_DATA_API}&contentType=json`)
   const data = await res.json()
 
   return {
