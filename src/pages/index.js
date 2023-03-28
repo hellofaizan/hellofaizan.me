@@ -8,7 +8,6 @@ import { useState, useEffect } from 'react'
 import axios from 'axios'
 
 const Home = ({mosam}) => {
-  console.log(mosam)
   const [stats, setStats] = useState({})
   const [topRepos, setTopRepos] = useState([])
   useEffect(() => {
