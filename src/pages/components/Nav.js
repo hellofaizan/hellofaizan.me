@@ -70,13 +70,7 @@ const Nav = () => {
                                 ? <div className='flex justify-between items-center'>
                                     <ul className='flex space-x-2'>
                                         <li className='dark:hover:text-gray-200'>
-                                            <Link href="/links">/links</Link>
-                                        </li>
-                                        <li className='dark:hover:text-gray-200'>
-                                            <Link href="/blogs" target="_blank">/blogs</Link>
-                                        </li>
-                                        <li className='dark:hover:text-gray-200'>
-                                            <Link href="/logs">/logs</Link>
+                                            <Link href="/blogs" target="_blank">• blogs</Link>
                                         </li>
                                     </ul>
                                     <ul className='flex sm:hidden items-center justify-center gap-3 text-lg font-medium dark:text-gray-300'>
