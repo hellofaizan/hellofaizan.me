@@ -26,6 +26,11 @@ module.exports = {
         permanent: true,
       },
       {
+        source: '/blogs',
+        destination: 'https://blog.hellofaizan.me',
+        permanent: true,
+      },
+      {
         source: '/twitter',
         destination: 'https://twitter.com/hellofaizandev',
         permanent: true,

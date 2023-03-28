@@ -14,18 +14,18 @@ const Online = () => {
             })
     }, [data])
 
-    if (data?.data?.active_on_discord_desktop === false && data?.data?.active_on_discord_mobile === false) {
+    if (data?.data?.active_on_discord_desktop === true || data?.data?.active_on_discord_mobile === true) {
         return (
-            <span className="w-3 h-3" title={data.data?.discord_status}>
-                <span className="absolute w-3 h-3 bg-gray-500 rounded-full animate-ping" />
-                <span className="absolute w-3 h-3 bg-gray-500 rounded-full" />
+            <span className="w-3 h-3 md:mt-3" title={data.data?.discord_status}>
+                <span className="absolute w-3 h-3 bg-green-500 rounded-full animate-ping" />
+                <span className="absolute w-3 h-3 bg-green-500 rounded-full" />
             </span>
         )
     }
     return (
-        <span className="w-3 h-3" title={data.data?.discord_status}>
-            <span className="absolute w-3 h-3 bg-green-500 rounded-full animate-ping" />
-            <span className="absolute w-3 h-3 bg-green-500 rounded-full" />
+        <span className="w-3 h-3 md:mt-3" title={data.data?.discord_status}>
+            <span className="absolute w-3 h-3 bg-gray-500 rounded-full animate-ping" />
+            <span className="absolute w-3 h-3 bg-gray-500 rounded-full" />
         </span>
     )
 }
