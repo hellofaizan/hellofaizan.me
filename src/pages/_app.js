@@ -3,6 +3,7 @@ import Head from 'next/head'
 import "bootstrap-icons/font/bootstrap-icons.css";
 import Nav from './components/Nav';
 import Spotify from './components/Spotify';
+import { Analytics } from '@vercel/analytics/react';
 
 
 export default function App({ Component, pageProps }) {
@@ -58,6 +59,7 @@ export default function App({ Component, pageProps }) {
         <Nav />
         <Component {...pageProps} />
         <Spotify />
+        <Analytics />
       </div>
     </>
   )
