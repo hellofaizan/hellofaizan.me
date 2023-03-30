@@ -42,7 +42,7 @@ const Home = ({mosam}) => {
           development and Android Development to create stunning user experiences on the front-end, and scalable and secure infrastructure
           on the backend.
         </p>
-        <p className='font-mono'>☁️ Currently 🌡️ {mosam?.currentConditions?.temp} °C out here</p>
+        <p className='font-mono'>🌡️ Currently { mosam?.currentConditions?.temp > 15 ? "☀️" : "🌦️" } {mosam?.currentConditions?.temp} °C out here</p>
         <h1 className='font-bold text-3xl sm:text-5xl mb-3 mt-8'>What I Do 💭</h1>
         <p className="text-gray-800 dark:text-gray-300 leading-6 tracking-wide">
           I&apos;m passionate about everything technology; from designing and developing software, to understanding how the many moving parts of the internet work together, to cybersecurity, systems, programming, and so much more. I strive to learn more about these things every day, and utilize my knowledge to further understand how or why the technology around us works.
