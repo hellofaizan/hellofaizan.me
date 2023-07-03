@@ -23,7 +23,7 @@ const Home = ({mosam}) => {
       .then((res1) => {
         const topRepos = res1.data
           .sort((a, b) => b.stargazers_count - a.stargazers_count)
-          .slice(0, 6);
+          .slice(0, 4);
         setTopRepos(topRepos)
       }
       )
@@ -75,12 +75,6 @@ const Home = ({mosam}) => {
         </div>
         <Mspotify />
 
-      </div>
-
-      <div className="sm:flex hidden fixed right-0 bottom-0 p-4">
-        <Link href={"/discord"} target="_blank" className="rounded-lg bg-indigo-600 px-4 py-3 text-white shadow-lg">
-          <p className='text-base'>I started a community on Discord. Join Now <i className='bi bi-discord'></i></p>
-        </Link>
       </div>
     </>
   )
