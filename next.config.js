@@ -32,7 +32,7 @@ module.exports = {
       },
       {
         source: '/twitter',
-        destination: 'https://twitter.com/hellofaizandev',
+        destination: 'https://twitter.com/hellofaizaan',
         permanent: true,
       },
       {
