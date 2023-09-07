@@ -37,7 +37,7 @@ export default function App({ Component, pageProps }) {
         <meta
           property="og:image"
           itemProp="image"
-          content="https://hellofaizan.me/faizaan.png"
+          content="https://hellofaizan.me/metaimage.jpg"
         />
 
         <meta property="og:type" content="article" />
@@ -52,7 +52,7 @@ export default function App({ Component, pageProps }) {
         <meta
           name="twitter:image"
           itemProp="image"
-          content="https://hellofaizan.me/faizaan.png"
+          content="https://hellofaizan.me/metaimage.jpg"
         />
       </Head>
       <div className='bg-[#ededed] dark:bg-[#282828] px-4 pb-5 w-full min-h-screen text-black h-full dark:text-white'>
