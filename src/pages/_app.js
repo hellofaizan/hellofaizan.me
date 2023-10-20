@@ -54,6 +54,9 @@ export default function App({ Component, pageProps }) {
           itemProp="image"
           content="https://hellofaizan.me/metaimage.jpg"
         />
+
+        <script async src="https://stats.hellofaizan.me/script.js" data-website-id="005b0a01-73c3-49fb-b466-b33809f4e6cd"></script>
+        
       </Head>
       <div className='bg-[#ededed] dark:bg-[#282828] px-4 pb-5 w-full min-h-screen text-black h-full dark:text-white'>
         <Nav />
