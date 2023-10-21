@@ -3,8 +3,7 @@ import Head from 'next/head'
 import "bootstrap-icons/font/bootstrap-icons.css";
 import Nav from './components/Nav';
 import Spotify from './components/Spotify';
-import { Analytics } from '@vercel/analytics/react';
-
+import { Toaster } from "@/components/ui/toaster"
 
 export default function App({ Component, pageProps }) {
   return (
@@ -55,11 +54,11 @@ export default function App({ Component, pageProps }) {
           content="https://hellofaizan.me/metaimage.jpg"
         />
       </Head>
-      <div className='bg-[#ededed] dark:bg-[#282828] px-4 pb-5 w-full min-h-screen text-black h-full dark:text-white'>
+      <div className="h-full min-h-screen w-full bg-white bg-[linear-gradient(to_right,#8080800a_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] bg-[size:14px_24px] dark:z-[-2] dark:bg-[#000000] dark:bg-[radial-gradient(#ffffff33_1px,#00091d_1px)] dark:bg-[size:20px_20px]">
         <Nav />
         <Component {...pageProps} />
         <Spotify />
-        <Analytics />
+        <Toaster />
       </div>
     </>
   )

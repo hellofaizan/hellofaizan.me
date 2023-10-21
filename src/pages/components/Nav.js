@@ -4,25 +4,52 @@ import Image from 'next/image'
 import { useRouter } from 'next/router'
 import classNames from '../utils/classNames'
 import { useState } from 'react'
+import {
+    Tooltip,
+    TooltipContent,
+    TooltipProvider,
+    TooltipTrigger,
+} from "@/components/ui/tooltip"
+
+import { useToast } from "@/components/ui/use-toast"
 
 const Nav = () => {
     const [show, setShow] = useState(false)
     const router = useRouter();
+    const { toast } = useToast()
 
     const LandingBtn = ({ name, link, selected }) => {
         return (
             <Link className={classNames(
                 selected
-                    ? "bg-black/10 dark:bg-[#c8c8dc]/10"
+                    ? "bg-gray-500/10 dark:bg-[#c8c8dc]/10"
                     : "bg-transparent hover:bg-gray-700/5 dark:hover:bg-[#c8c8dc]/5 dark:text-white",
                 "rounded-lg px-3 py-2"
             )} href={link} > {name} </Link>
         );
     }
 
+    const copyEmail = () => {
+        // copy email to clipboard
+        navigator.clipboard.writeText('faizancurious@gmail.com').then(
+            function () {
+                toast({
+                    title: "Email Copied!",
+                })
+            }
+            , function (err) {
+                toast({
+                    title: "Failed to Copy Email!",
+                    description: err,
+                })
+            }
+        );
+
+    }
+
     return (
         <div className='flex justify-center'>
-            <div className='z-[999] sm:mt-4 fixed w-full md:w-[50rem] bg-[#d4d4d4]/40 dark:bg-[#393939]/40 sm:border sm:dark:border-slate-600 sm:border-slate-300 backdrop-blur-lg md:rounded-lg overflow-hidden'>
+            <div className='z-[999] sm:mt-4 fixed w-full md:w-[50rem] bg-slate-100/40 dark:bg-[#393939]/40 sm:border sm:dark:border-slate-600 sm:border-slate-300 backdrop-blur-lg md:rounded-lg'>
                 <nav aria-label="Site Nav" className="flex flex-col px-6 py-3 " >
                     <div className='flex justify-between items-center w-full'>
                         <ul className="flex items-center md:gap-1 text-md font-medium dark:text-gray-300 ">
@@ -57,10 +84,43 @@ const Nav = () => {
                         </ul>
 
                         <ul className='hidden sm:flex items-center gap-4 text-xl font-medium dark:text-gray-300'>
-                            <li><Link href={"/discord"} target="_blank"><i className='bi bi-discord'></i></Link></li>
-                            <li><Link href={"/github"} target="_blank"><i className='bi bi-github'></i></Link></li>
-                            <li><Link href={"/twitter"} target="_blank"><i className='bi bi-twitter'></i></Link></li>
-                            <li><Link href={"/mail"} target="_blank"><i className='bi bi-envelope-at'></i></Link></li>
+                            <li><TooltipProvider>
+                                <Tooltip>
+                                    <TooltipTrigger asChild><Link href={"/discord"} target="_blank"><i className='bi bi-discord'></i></Link></TooltipTrigger>
+                                    <TooltipContent>
+                                        <p>Discord</p>
+                                    </TooltipContent>
+                                </Tooltip>
+                            </TooltipProvider>
+                            </li>
+                            <li><TooltipProvider>
+                                <Tooltip>
+                                    <TooltipTrigger asChild><Link href={"/github"} target="_blank"><i className='bi bi-github'></i></Link></TooltipTrigger>
+                                    <TooltipContent>
+                                        <p>Github</p>
+                                    </TooltipContent>
+                                </Tooltip>
+                            </TooltipProvider></li>
+                            <li>
+                            <TooltipProvider>
+                                <Tooltip>
+                                    <TooltipTrigger asChild><Link href={"/twitter"} target="_blank"><i className='bi bi-twitter'></i></Link></TooltipTrigger>
+                                    <TooltipContent>
+                                        <p>Twitter 𝕏</p>
+                                    </TooltipContent>
+                                </Tooltip>
+                            </TooltipProvider>
+                            </li>
+                            <li>
+                            <TooltipProvider>
+                                <Tooltip>
+                                    <TooltipTrigger asChild><button onClick={copyEmail}><i className='bi bi-envelope-at'></i></button></TooltipTrigger>
+                                    <TooltipContent>
+                                        <p>Copy Email: faizancurious@gmail.com</p>
+                                    </TooltipContent>
+                                </Tooltip>
+                            </TooltipProvider>
+                            </li>
                         </ul>
                     </div>
 
@@ -77,7 +137,7 @@ const Nav = () => {
                                         <li><Link href={"/discord"} target="_blank"><i className='bi bi-discord'></i></Link></li>
                                         <li><Link href={"/github"} target="_blank"><i className='bi bi-github'></i></Link></li>
                                         <li><Link href={"/twitter"} target="_blank"><i className='bi bi-twitter'></i></Link></li>
-                                        <li><Link href={"/mail"} target="_blank"><i className='bi bi-envelope-at'></i></Link></li>
+                                        <li><button onClick={copyEmail}><i className='bi bi-envelope-at'></i></button></li>
                                     </ul>
                                 </div> : null
                         }

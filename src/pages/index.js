@@ -36,19 +36,19 @@ const Home = ({mosam}) => {
   return (
     <>
       <div className='container flex flex-col max-w-[760px] mx-auto md:mt-32 mt-24 sm:mt-32'>
-        <div className='flex flex-row items-center gap-3 mb-3'><h1 className='font-bold text-[32px] sm:text-5xl'>Hey! 👋 Faizan here</h1><Online /></div>
+        <div className='flex flex-row items-center gap-3 mb-3 dark:text-white'><h1 className='font-bold text-[32px] sm:text-5xl'>Hey! 👋 Faizan here</h1><Online /></div>
         <p className="text-gray-800 dark:text-gray-300 leading-6 tracking-wide mb-1">
           I&apos;m a self-taught software engineer from the Kashmir India. I&apos;m currently pursuing full-stack web
           development and Android Development to create stunning user experiences on the front-end, and scalable and secure infrastructure
           on the backend.
         </p>
-        <p className='font-mono'>🌡️ Currently { mosam?.currentConditions?.temp > 15 ? "☀️" : "🌦️" } {mosam?.currentConditions?.temp} °C in Kashmir</p>
-        <h1 className='font-bold text-3xl sm:text-5xl mb-3 mt-8'>What I Do 💭</h1>
+        <p className='font-mono dark:text-slate-200'>🌡️ Currently { mosam?.currentConditions?.temp > 15 ? "☀️" : "🌦️" } {mosam?.currentConditions?.temp} °C in Kashmir</p>
+        <h1 className='font-bold text-3xl sm:text-5xl mb-3 mt-8 dark:text-white'>What I Do 💭</h1>
         <p className="text-gray-800 dark:text-gray-300 leading-6 tracking-wide">
           I&apos;m passionate about everything technology; from designing and developing software, to understanding how the many moving parts of the internet work together, to cybersecurity, systems, programming, and so much more. I strive to learn more about these things every day, and utilize my knowledge to further understand how or why the technology around us works.
         </p>
         <Work />
-        <h1 className='font-bold text-3xl sm:text-5xl mb-3 mt-8'>Projects 🛠️</h1>
+        <h1 className='font-bold text-3xl sm:text-5xl mb-3 mt-8 dark:text-white'>Projects 🛠️</h1>
         <p className="text-gray-800 dark:text-gray-300 leading-6 tracking-wide mb-4">
           In my free time, I enjoy creating open source projects on{" "}
           <a
