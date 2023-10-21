@@ -53,6 +53,9 @@ export default function App({ Component, pageProps }) {
           itemProp="image"
           content="https://hellofaizan.me/metaimage.jpg"
         />
+
+        <script async src="https://stats.hellofaizan.me/script.js" data-website-id="005b0a01-73c3-49fb-b466-b33809f4e6cd"></script>
+        
       </Head>
       <div className="h-full min-h-screen w-full bg-white bg-[linear-gradient(to_right,#8080800a_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] bg-[size:14px_24px] dark:z-[-2] dark:bg-[#000000] dark:bg-[radial-gradient(#ffffff33_1px,#00091d_1px)] dark:bg-[size:20px_20px]">
         <Nav />
