@@ -116,7 +116,7 @@ const Nav = () => {
                                 <Tooltip>
                                     <TooltipTrigger asChild><button onClick={copyEmail}><i className='bi bi-envelope-at'></i></button></TooltipTrigger>
                                     <TooltipContent>
-                                        <p>Copy Email: faizancurious@gmail.com</p>
+                                        <p>Copy👉 faizancurious@gmail.com</p>
                                     </TooltipContent>
                                 </Tooltip>
                             </TooltipProvider>
