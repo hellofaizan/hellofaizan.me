@@ -17,7 +17,7 @@ const Bookmarks = ({ bookmarks }) => {
                 Have an inquiry, or want to connect? Feel free to leave a message below, or get in touch via Discord, Twitter, or email.
             </p>
 
-            <div className='flex flex-col gap-y-2 mt-8'>
+            <div className='flex flex-col gap-y-2 mt-6 md:mt-8'>
                 {bookmarks.length > 0 ? (
                     bookmarks.map((bookmark) => (
                         <BookmarkComponent key={bookmark.id} url={bookmark.url} bookmark={bookmark} />
