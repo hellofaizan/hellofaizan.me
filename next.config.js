@@ -16,6 +16,12 @@ module.exports = {
         port: '',
         pathname: '/external/**',
       },
+      {
+        protocol: 'https',
+        hostname: 'icons.duckduckgo.com',
+        port: '',
+        pathname: '/ip3/**',
+      },
     ],
   },
   async redirects() {

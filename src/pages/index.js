@@ -4,7 +4,7 @@ import Online from '@/components/Online'
 import { useState, useEffect } from 'react'
 import axios from 'axios'
 
-const Home = ({mosam}) => {
+const Home = ({ mosam }) => {
   const [stats, setStats] = useState({})
   const [topRepos, setTopRepos] = useState([])
   useEffect(() => {
@@ -39,7 +39,7 @@ const Home = ({mosam}) => {
           development and Android Development to create stunning user experiences on the front-end, and scalable and secure infrastructure
           on the backend.
         </p>
-        <p className='font-mono dark:text-slate-200'>🌡️ Currently { mosam?.currentConditions?.temp > 15 ? "☀️" : "🌦️" } {mosam?.currentConditions?.temp} °C in Kashmir</p>
+        <p className='font-mono dark:text-slate-200'>🌡️ Currently {mosam?.currentConditions?.temp > 15 ? "☀️" : "🌦️"} {mosam?.currentConditions?.temp} °C in Kashmir</p>
         <h1 className='font-bold text-3xl sm:text-5xl mb-3 mt-8 dark:text-white'>What I Do 💭</h1>
         <p className="text-gray-800 dark:text-gray-300 leading-6 tracking-wide">
           I&apos;m passionate about everything technology; from designing and developing software, to understanding how the many moving parts of the internet work together, to cybersecurity, systems, programming, and so much more. I strive to learn more about these things every day, and utilize my knowledge to further understand how or why the technology around us works.

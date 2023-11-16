@@ -67,17 +67,7 @@ const Nav = () => {
                             </li>
 
                             <li className='dark:hover:text-gray-100 ml-3'>
-                                {
-                                    !show ? <i className='bi bi-caret-down-fill' onClick={
-                                        () => {
-                                            setShow(!show)
-                                        }
-                                    }></i> : <i className='bi bi-caret-right-fill' onClick={
-                                        () => {
-                                            setShow(!show)
-                                        }
-                                    }></i>
-                                }
+                                <LandingBtn name="Bookmarks" link="/bookmark" selected={router.pathname === "/bookmark"} />
                             </li>
 
 
@@ -102,45 +92,26 @@ const Nav = () => {
                                 </Tooltip>
                             </TooltipProvider></li>
                             <li>
-                            <TooltipProvider>
-                                <Tooltip>
-                                    <TooltipTrigger asChild><Link href={"/twitter"} target="_blank"><i className='bi bi-twitter'></i></Link></TooltipTrigger>
-                                    <TooltipContent>
-                                        <p>Twitter 𝕏</p>
-                                    </TooltipContent>
-                                </Tooltip>
-                            </TooltipProvider>
+                                <TooltipProvider>
+                                    <Tooltip>
+                                        <TooltipTrigger asChild><Link href={"/twitter"} target="_blank"><i className='bi bi-twitter'></i></Link></TooltipTrigger>
+                                        <TooltipContent>
+                                            <p>Twitter 𝕏</p>
+                                        </TooltipContent>
+                                    </Tooltip>
+                                </TooltipProvider>
                             </li>
                             <li>
-                            <TooltipProvider>
-                                <Tooltip>
-                                    <TooltipTrigger asChild><button onClick={copyEmail}><i className='bi bi-envelope-at'></i></button></TooltipTrigger>
-                                    <TooltipContent>
-                                        <p>Copy👉 faizancurious@gmail.com</p>
-                                    </TooltipContent>
-                                </Tooltip>
-                            </TooltipProvider>
+                                <TooltipProvider>
+                                    <Tooltip>
+                                        <TooltipTrigger asChild><button onClick={copyEmail}><i className='bi bi-envelope-at'></i></button></TooltipTrigger>
+                                        <TooltipContent>
+                                            <p>Copy👉 faizancurious@gmail.com</p>
+                                        </TooltipContent>
+                                    </Tooltip>
+                                </TooltipProvider>
                             </li>
                         </ul>
-                    </div>
-
-                    <div className='mt-1'>
-                        {
-                            show
-                                ? <div className='flex justify-between items-center'>
-                                    <ul className='flex space-x-2'>
-                                        <li className='dark:hover:text-gray-200'>
-                                            <Link href="/blogs" target="_blank">• blogs</Link>
-                                        </li>
-                                    </ul>
-                                    <ul className='flex sm:hidden items-center justify-center gap-3 text-lg font-medium dark:text-gray-300'>
-                                        <li><Link href={"/discord"} target="_blank"><i className='bi bi-discord'></i></Link></li>
-                                        <li><Link href={"/github"} target="_blank"><i className='bi bi-github'></i></Link></li>
-                                        <li><Link href={"/twitter"} target="_blank"><i className='bi bi-twitter'></i></Link></li>
-                                        <li><button onClick={copyEmail}><i className='bi bi-envelope-at'></i></button></li>
-                                    </ul>
-                                </div> : null
-                        }
                     </div>
                 </nav>
 
