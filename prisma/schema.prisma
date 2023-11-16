@@ -13,7 +13,6 @@ datasource db {
 model Bookmarks {
   id        Int      @id @default(autoincrement())
   url       String
-  count     Int      @default(0)
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
 }

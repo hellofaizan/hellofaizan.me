@@ -23,7 +23,7 @@ const Bookmarks = ({ bookmarks }) => {
                         <BookmarkComponent key={bookmark.id} url={bookmark.url} bookmark={bookmark} />
                     ))
                 ) : (
-                    <p className='text-gray-800 dark:text-gray-300'>No bookmarks yet.</p>
+                    <p className='text-gray-800 '>No bookmarks yet.</p>
 
                 )}
             </div>
