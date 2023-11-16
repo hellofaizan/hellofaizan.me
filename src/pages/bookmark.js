@@ -2,10 +2,16 @@ import axios from 'axios'
 import { Bookmark } from 'lucide-react'
 import React from 'react'
 import BookmarkComponent from '@/components/BookmarkComonent'
-import { PrismaClient } from '@prisma/client'
-const prisma = new PrismaClient()
+import { useEffect, useState } from 'react'
 
-const Bookmarks = ({ bookmarks }) => {
+const Bookmarks = () => {
+    const [bookmarks, setBookmarks] = useState('')
+
+    useEffect(() => {
+        axios.get('/api/bookmarks').then((res) => {
+            setBookmarks(res.data.data)
+        })
+    }, [])
 
     return (
         <div className='container flex flex-col max-w-[760px] mx-auto md:mt-32 mt-24 sm:mt-32'>
@@ -32,19 +38,13 @@ const Bookmarks = ({ bookmarks }) => {
 }
 
 // get server side props
-export async function getServerSideProps() {
-    const data = await prisma.bookmarks.findMany({
-        orderBy: {
-            createdAt: 'desc'
-        }
-
-    })
-    const bookmarks = JSON.parse(JSON.stringify(data))
-    return {
-        props: {
-            bookmarks
-        }
-    }
-}
+// export async function getServerSideProps() {
+    
+//     return {
+//         props: {
+//             bookmarks
+//         }
+//     }
+// }
 
 export default Bookmarks
