@@ -1,8 +1,7 @@
 import '@/styles/globals.css'
 import Head from 'next/head'
 import "bootstrap-icons/font/bootstrap-icons.css";
-import Nav from './components/Nav';
-import Spotify from './components/Spotify';
+import Nav from '@/components/Nav';
 import { Toaster } from "@/components/ui/toaster"
 
 export default function App({ Component, pageProps }) {
@@ -60,7 +59,6 @@ export default function App({ Component, pageProps }) {
       <div className="h-full min-h-screen w-full bg-white bg-[linear-gradient(to_right,#8080800a_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] bg-[size:14px_24px] dark:z-[-2] dark:bg-[#000000] dark:bg-[radial-gradient(#ffffff33_1px,#00091d_1px)] dark:bg-[size:20px_20px]">
         <Nav />
         <Component {...pageProps} />
-        <Spotify />
         <Toaster />
       </div>
     </>
