@@ -18,9 +18,9 @@ module.exports = {
       },
       {
         protocol: 'https',
-        hostname: 'icons.duckduckgo.com',
+        hostname: 'icon.horse',
         port: '',
-        pathname: '/ip3/**',
+        pathname: '/icon/**',
       },
     ],
   },

@@ -11,10 +11,10 @@ const Bookmarks = ({ bookmarks }) => {
         <div className='container flex flex-col max-w-[760px] mx-auto md:mt-32 mt-24 sm:mt-32'>
             <div className="flex flex-row items-center gap-x-2">
                 <h1 className='font-bold text-3xl sm:text-5xl mb-3 dark:text-white'>Bookmarks</h1>
-                <Bookmark className='h-8 w-8' />
+                <Bookmark className='h-5 w-5 md:h-8 md:w-8' />
             </div>
             <p className="text-gray-800 dark:text-gray-300 leading-6 tracking-wide">
-                Have an inquiry, or want to connect? Feel free to leave a message below, or get in touch via Discord, Twitter, or email.
+            Awesome things I&apos;ve found on the internet. One neat thing about this page is, I just need to send a telegram message to a bot and it adds it here in the list.
             </p>
 
             <div className='flex flex-col gap-y-2 mt-6 md:mt-8'>
