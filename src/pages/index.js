@@ -4,9 +4,10 @@ import Online from '@/components/Online'
 import { useState, useEffect } from 'react'
 import axios from 'axios'
 
-const Home = ({ mosam }) => {
+const Home = () => {
   const [stats, setStats] = useState({})
   const [topRepos, setTopRepos] = useState([])
+  const [mosam, setMosam] = useState({})
   useEffect(() => {
     axios.get("https://api.github-star-counter.workers.dev/user/hellofaizan")
       .then((res) => {
@@ -26,8 +27,15 @@ const Home = ({ mosam }) => {
       )
       .catch((err1) => {
         console.log(err1)
-      }
-      )
+      })
+
+    axios.get(`https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/33.7261747%2C74.8272185?unitGroup=metric&include=current&key=${process.env.NEXT_PUBLIC_WEATHER_DATA_API}&contentType=json`)
+      .then((res2) => {
+        setMosam(res2.data)
+      })
+      .catch((err2) => {
+        console.log(err2)
+      })
   }, [])
 
   return (
@@ -74,17 +82,5 @@ const Home = ({ mosam }) => {
     </>
   )
 }
-
-export const getServerSideProps = async () => {
-  const res = await fetch(`https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/33.7261747%2C74.8272185?unitGroup=metric&include=current&key=${process.env.NEXT_PUBLIC_WEATHER_DATA_API}&contentType=json`)
-  const data = await res.json()
-
-  return {
-    props: {
-      mosam: data
-    }
-  }
-}
-
 
 export default Home
