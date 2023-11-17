@@ -30,7 +30,7 @@ const BookmarkComonent = ({ id, url, bookmark }) => {
                 <div className='flex flex-row gap-x-2'>
                     <Image src={`https://icon.horse/icon/${hostname}`} alt={hostname} width={46} height={46} />
                     <div className='flex flex-col'>
-                        <h1 className='w-52 md:w-96 font-semibold text-base sm:text-xl text-gray-800 flex-nowrap overflow-hidden text-ellipsis'>{title}</h1>
+                        <h1 className='w-56 md:w-[28rem] font-semibold text-base sm:text-xl flex-nowrap overflow-hidden text-ellipsis'>{title}</h1>
                         <p className='text-gray-500 dark:text-gray-400'>{hostname}</p>
                     </div>
                 </div>

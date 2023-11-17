@@ -12,6 +12,8 @@ import {
 } from "@/components/ui/tooltip"
 
 import { useToast } from "@/components/ui/use-toast"
+import { ModeToggle } from './toggle'
+import { Button } from './ui/button'
 
 const Nav = () => {
     const [show, setShow] = useState(false)
@@ -107,6 +109,16 @@ const Nav = () => {
                                         <TooltipTrigger asChild><button onClick={copyEmail}><i className='bi bi-envelope-at'></i></button></TooltipTrigger>
                                         <TooltipContent>
                                             <p>Copy👉 faizancurious@gmail.com</p>
+                                        </TooltipContent>
+                                    </Tooltip>
+                                </TooltipProvider>
+                            </li>
+                            <li>
+                                <TooltipProvider>
+                                    <Tooltip>
+                                        <TooltipTrigger asChild><ModeToggle /></TooltipTrigger>
+                                        <TooltipContent>
+                                            <p>Toggle Theme</p>
                                         </TooltipContent>
                                     </Tooltip>
                                 </TooltipProvider>
