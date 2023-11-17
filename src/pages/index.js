@@ -76,6 +76,10 @@ const Home = () => {
           })}
         </div>
 
+        <div className='mt-2 mb-2 hidden md:flex'>
+          <iframe src="https://github.com/sponsors/hellofaizan/card" className='w-full h-auto' title="Sponsor hellofaizan"></iframe>
+        </div>
+
       </div>
     </>
   )
