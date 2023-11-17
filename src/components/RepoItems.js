@@ -6,7 +6,7 @@ const RepoItem = (props) => {
     const repo = props.repo
     return (
         <div className="hover:scale-[1.001]">
-            <a href={`https://github.com/hellofaizan/${repo.name}`} rel="noreferrer" target="_blank">
+            <a href={`https://github.com/hellofaizan/${repo.repo}`} rel="noreferrer" target="_blank">
                 <div className="flex flex-col h-36 p-4 bg-white/10 dark:bg-black/10 rounded-md border border-slate-400 hover:border-slate-700 dark:border-slate-800 dark:hover:border-slate-600 transition-colors duration-75 cursor-pointer">
 
                     <h1 className="font-semibold mb-1 dark:text-slate-50">{repo.name}</h1>
@@ -22,8 +22,8 @@ const RepoItem = (props) => {
                             <BiGitRepoForked className="mr-1 w-4 h-4" /> {repo.forks}
                         </p>
                         <p className="flex flex-row items-center">
-                            <span className="w-3 h-3 rounded-full mr-1" style={{ background: repo.language_color, border: `solid 3px ${repo.language_color}` }} />
-                            {repo.language}
+                            <span className="w-3 h-3 rounded-full mr-1" style={{ background: repo.language.color, border: `solid 3px ${repo.language.color}` }} />
+                            {repo.language.name}
                         </p>
                     </div>
                 </div>

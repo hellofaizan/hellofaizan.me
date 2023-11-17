@@ -19,7 +19,7 @@ const Home = () => {
 
     axios.get("/api/pinnedRepos")
       .then((res1) => {
-        const topRepos = res1.data
+        const topRepos = res1.data.response
         setTopRepos(topRepos)
       }
       )

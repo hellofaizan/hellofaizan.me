@@ -2,7 +2,7 @@
 
 const handler = async (req, res) => {
     const response = await fetch(
-        `https://pinned.thrzl.xyz/hellofaizan`
+        `https://gh-pinned-repos-api.ysnirix.xyz/api/get/?username=hellofaizan`
     ).then((res) => res.json());
 
     res.status(200).json(response);
