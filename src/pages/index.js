@@ -17,11 +17,9 @@ const Home = () => {
         console.log(err)
       })
 
-    axios.get("https://api.github.com/users/hellofaizan/repos?type=owner&per_page=100")
+    axios.get("/api/pinnedRepos")
       .then((res1) => {
         const topRepos = res1.data
-          .sort((a, b) => b.stargazers_count - a.stargazers_count)
-          .slice(0, 4);
         setTopRepos(topRepos)
       }
       )
@@ -72,7 +70,7 @@ const Home = () => {
           {topRepos && topRepos.map((repo) => {
             return (
               <RepoItem
-                name={repo.name} desc={repo.description} lang={repo.language} stars={repo.stargazers_count} forks={repo.forks_count} key={repo.name}
+                repo={repo} key={repo.repo}
               />
             );
           })}
