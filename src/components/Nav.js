@@ -14,6 +14,7 @@ import {
 import { useToast } from "@/components/ui/use-toast"
 import { ModeToggle } from './toggle'
 import { Button } from './ui/button'
+import Mobilenav from './mobilenav'
 
 const Nav = () => {
     const [show, setShow] = useState(false)
@@ -122,6 +123,15 @@ const Nav = () => {
                                         </TooltipContent>
                                     </Tooltip>
                                 </TooltipProvider>
+                            </li>
+                        </ul>
+
+                        <ul className='sm:hidden items-center flex flex-row'>
+                            <li>
+                                <ModeToggle />
+                            </li>
+                            <li>
+                                <Mobilenav />
                             </li>
                         </ul>
                     </div>
