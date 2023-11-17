@@ -69,7 +69,7 @@ const Nav = () => {
                                 <LandingBtn name="Contact" link="/contact" selected={router.pathname === "/contact"} />
                             </li>
 
-                            <li className='dark:hover:text-gray-100 ml-3'>
+                            <li className='dark:hover:text-gray-100'>
                                 <LandingBtn name="Bookmarks" link="/bookmark" selected={router.pathname === "/bookmark"} />
                             </li>
 
