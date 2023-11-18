@@ -6,7 +6,7 @@
 
 ## [Website Demo](https://www.hellofaizan.me)
 
-![Website Image](https://media.discordapp.net/attachments/1065518726855807067/1085395237624631317/Screenshot_2023-03-11_131224.png)
+![image](https://github.com/hellofaizan/hellofaizan.me/assets/84437051/8376f0f3-b299-44a7-b22e-def5f5afa61d)
 
 ## Tech Stack used
 
