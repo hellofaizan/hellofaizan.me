@@ -20,7 +20,7 @@ const Bookmarks = () => {
                 <Bookmark className='h-5 w-5 md:h-8 md:w-8' />
             </div>
             <p className="text-gray-800 dark:text-gray-300 leading-6 tracking-wide">
-            Awesome things I&apos;ve found on the internet. One neat thing about this page is, I just need to send a telegram message to a bot and it adds it here in the list.
+            Awesome things I&apos;ve found on the internet. One neat thing about this page is, I just need to send a command message to a discord bot and it adds the link in here to the list.
             </p>
 
             <div className='flex flex-col gap-y-2 mt-6 md:mt-8'>
@@ -29,7 +29,11 @@ const Bookmarks = () => {
                         <BookmarkComponent key={bookmark.id} url={bookmark.url} bookmark={bookmark} />
                     ))
                 ) : (
-                    <p className='text-gray-800 '>No bookmarks yet.</p>
+                    // if loading
+                    <div className='flex flex-col items-center justify-center'>
+                        <div className='animate-spin rounded-full h-10 w-10 border-b-2 border-gray-900 dark:border-gray-100'></div>
+                    </div>
+
 
                 )}
             </div>
