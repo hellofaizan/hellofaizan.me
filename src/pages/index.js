@@ -50,10 +50,10 @@ const Home = () => {
         <p className="text-gray-800 dark:text-gray-300 leading-6 tracking-wide">
           I&apos;m passionate about everything in the technology; from designing and developing software, to understanding how the many moving parts of the internet work together, to cybersecurity, systems, programming, and so much more. I strive to learn more about these things every day, and utilize my knowledge to further understand how or why the technology around us works.
         </p>
-        <h1 className='font-bold text-3xl sm:text-5xl mb-3 mt-8 dark:text-white'>Technology 💻</h1>
+        {/* <h1 className='font-bold text-3xl sm:text-5xl mb-3 mt-8 dark:text-white'>Technology 💻</h1>
         <p className="text-gray-800 dark:text-gray-300 leading-6 tracking-wide">
           I use a variety of tools to streamline my development process and increase the quality of both my code, and my projects. Below is a list of technologies and languages I&apos;ve had experience with in the past, or use currently.
-        </p>
+        </p> */}
         <h1 className='font-bold text-3xl sm:text-5xl mb-3 mt-8 dark:text-white'>Projects 🛠️</h1>
         <p className="text-gray-800 dark:text-gray-300 leading-6 tracking-wide mb-4">
           In my free time, I enjoy creating open source projects on{" "}
