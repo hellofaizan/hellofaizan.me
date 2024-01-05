@@ -71,7 +71,7 @@ const Contact = () => {
               <input
                 type="text"
                 onChange={e => (email.current = e.target.value)}
-                className="w-full rounded-lg dark:bg-blue-600/10 border dark:border-slate-600 text-black dark:text-white border-gray-200 p-4 pr-12 text-sm shadow-sm"
+                className="w-full rounded-lg dark:bg-gray-800 border dark:border-slate-600 text-black dark:text-white border-gray-200 p-4 pr-12 text-sm shadow-sm"
                 placeholder="yourname#0000"
               />
               <span className="absolute inset-y-0 right-4 inline-flex items-center dark:text-slate-200">
@@ -88,7 +88,7 @@ const Contact = () => {
                 id="message"
                 rows="4"
                 onChange={e => (message.current = e.target.value)}
-                className="w-full dark:bg-blue-600/10 border dark:border-slate-600 rounded-lg text-black dark:text-white border-gray-200 p-4 mb-2 pr-12 text-sm shadow-sm"
+                className="w-full dark:bg-gray-800 border dark:border-slate-600 rounded-lg text-black dark:text-white border-gray-200 p-4 mb-2 pr-12 text-sm shadow-sm"
                 placeholder="Drop your message. I will reply back soon."
               />
             </div>

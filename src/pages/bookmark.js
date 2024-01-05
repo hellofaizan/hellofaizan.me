@@ -23,7 +23,7 @@ const Bookmarks = () => {
             Awesome things I&apos;ve found on the internet. One neat thing about this page is, I just need to send a command message to a discord bot and it adds the link in here to the list.
             </p>
 
-            <div className='flex flex-col gap-y-2 mt-6 md:mt-8'>
+            <div className='flex flex-col gap-y-2 mt-6 md:mt-8 mb-6'>
                 {bookmarks.length > 0 ? (
                     bookmarks.map((bookmark) => (
                         <BookmarkComponent key={bookmark.id} url={bookmark.url} bookmark={bookmark} />

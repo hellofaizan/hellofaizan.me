@@ -22,11 +22,11 @@ const BookmarkComonent = ({ id, url, bookmark }) => {
     getTitle()
 
     return (
-        <div className={cn(
-            'flex flex-row items-center justify-between',
+        <Link className={cn(
+            'flex flex-row items-center justify-between hover:shadow-md rounded-lg w-full h-20 md:h-[5rem] bg-transparent dark:hover:bg-gray-800 dark:hover:text-white dark:text-gray-300',
             buttonVariants({ variant: 'ghost', size: "card" }),
-        )}>
-            <Link className='w-full flex items-center justify-between gap-x-2' href={url} target='_blank'>
+        )} href={url} target='_blank'>
+            <div className='w-full flex items-center justify-between gap-x-2 h-full' >
                 <div className='flex flex-row gap-x-2'>
                     <Image src={`https://icon.horse/icon/${hostname}`} alt={hostname} width={46} height={46} />
                     <div className='flex flex-col'>
@@ -38,8 +38,8 @@ const BookmarkComonent = ({ id, url, bookmark }) => {
                 <div className='flex flex-row gap-1'>
                     <ChevronUp />
                 </div>
-            </Link>
-        </div>
+            </div>
+        </Link>
     )
 }
 
