@@ -22,6 +22,12 @@ module.exports = {
         port: '',
         pathname: '/icon/**',
       },
+      {
+        protocol: 'https',
+        hostname: 'cdn.discordapp.com',
+        port: '',
+        pathname: '/attachments/**',
+      },
     ],
   },
   async redirects() {
