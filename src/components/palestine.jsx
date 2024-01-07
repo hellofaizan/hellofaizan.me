@@ -4,8 +4,7 @@ import Link from "next/link";
 
 export default function Banner() {
   const title = "We do not support Genocide - Free Palestine 🇵🇸";
-  const description = "Stand for humanity! Palestine has a right to defend itself. Together, we can put an end to the Gaza genocide. Let's unite to " 
-  const moredesc = " and ensure that every life in this region has access to the most basic necessities.";
+  const description = "Stand for humanity! Palestine has a right to defend itself. Together, we can put an end to the Gaza genocide. Let's unite and ensure that every life in this region has access to the most basic necessities." 
   const linkTo = "https://twitter.com/search?q=%23PalestineLivesMatter";
   // ---- change the content above if you want to ----
 
@@ -25,7 +24,7 @@ export default function Banner() {
             height={130}
           />
           <p className="text-sm font-medium ml-[85px]">
-            <span className="font-bold text-base">{title}</span> <br/> <span className="hidden md:flex">{description}<span className="bg-gradient-to-r from-red-500 dark:from-red-500 via-black dark:via-white to-green-500 dark:to-green-500 bg-clip-text text-transparent mx-1.5">#SAVEGAZASAVEPALESTINE</span>{moredesc}</span>
+            <span className="font-bold text-base">{title}</span> <br/> <span className="hidden md:block">{description} <span className="bg-gradient-to-r from-red-500 dark:from-red-500 via-black dark:via-white to-green-500 dark:to-green-500 bg-clip-text text-transparent ml-1">#SAVEGAZASAVEPALESTINE</span></span>
           </p>
         </Link>
 
