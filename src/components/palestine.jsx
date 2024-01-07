@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 export default function Banner() {
-  const title = "We don not support Genocide - Free Palestine 🇵🇸";
+  const title = "We do not support Genocide - Free Palestine 🇵🇸";
   const description = `Stand for humanity! Palestine has a right to defend itself. Together, we can put an end to the Gaza genocide. Let's unite to #SAVEGAZA and ensure that every life in this region has access to the most basic necessities.`;
   const linkTo = "https://twitter.com/search?q=%23PalestineLivesMatter";
   // ---- change the content above if you want to ----
