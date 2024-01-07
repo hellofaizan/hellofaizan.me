@@ -14,7 +14,7 @@ const Bookmarks = () => {
     }, [])
 
     return (
-        <div className='container flex flex-col max-w-[760px] mx-auto md:mt-32 mt-24 sm:mt-32'>
+        <div className='container min-h-screen flex flex-col max-w-[760px] mx-auto md:mt-32 mt-24 sm:mt-32'>
             <div className="flex flex-row items-center gap-x-2">
                 <h1 className='font-bold text-3xl sm:text-5xl mb-3 dark:text-white'>Bookmarks</h1>
                 <Bookmark className='h-5 w-5 md:h-8 md:w-8' />

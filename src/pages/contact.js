@@ -55,7 +55,7 @@ const Contact = () => {
   }
   return (
     <>
-      <div className='container flex flex-col max-w-[760px] mx-auto md:mt-32 mt-24 sm:mt-32'>
+      <div className='container flex flex-col max-w-[760px] mx-auto md:mt-32 mt-24 sm:mt-32 min-h-screen'>
         <h1 className='font-bold text-3xl sm:text-5xl mb-3 dark:text-white'>Contact Me 📨</h1>
         <p className="text-gray-800 dark:text-gray-300 leading-6 tracking-wide">
           Have an inquiry, or want to connect? Feel free to leave a message below, or get in touch via Discord, Twitter, or email.

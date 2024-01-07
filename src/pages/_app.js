@@ -4,6 +4,7 @@ import "bootstrap-icons/font/bootstrap-icons.css";
 import Nav from '@/components/Nav';
 import { Toaster } from "@/components/ui/toaster"
 import { ThemeProvider } from '@/components/theme-provider';
+import Banner from '@/components/palestine';
 
 export default function App({ Component, pageProps }) {
   return (
@@ -68,6 +69,7 @@ export default function App({ Component, pageProps }) {
           <Component {...pageProps} />
           <Toaster />
         </ThemeProvider>
+        <Banner />
       </div>
     </>
   )
