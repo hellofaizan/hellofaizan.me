@@ -18,7 +18,7 @@ export default function Banner() {
         <Link href={linkTo} target="_blank" className="flex flex-row items-center">
           <Image
             className="fixed bottom-0 -ml-8"
-            src="https://cdn.discordapp.com/attachments/1065518726855807067/1193491914415144970/pngtree-holding-hand-palestine-png-image_6513341-removebg-preview.png?ex=65ace8f6&is=659a73f6&hm=ec655600f563266b822d1cb141408562e2705534ad620640ac6363c007f6e818&"
+            src="https://cdn.discordapp.com/attachments/1065518726855807067/1193491914415144970/pngtree-holding-hand-palestine-png-image_6513341-removebg-preview.png?ex=66bc7df6&is=66bb2c76&hm=1abd3216122f7be261b070c653f2e473931a0a690d4be4df374081d861f57090&"
             alt=""
             width={130}
             height={130}
