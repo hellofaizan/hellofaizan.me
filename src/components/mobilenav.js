@@ -18,11 +18,11 @@ const Mobilenav = () => {
     return (
         <DropdownMenu>
             <DropdownMenuTrigger>
-                <div className={"p-2 bg-muted rounded-lg"}>
+                <div className={"p-2 hover:bg-muted rounded-lg"}>
                     <ChevronDown />
                 </div>
             </DropdownMenuTrigger>
-            <DropdownMenuContent className="w-56">
+            <DropdownMenuContent className="w-56 z-10">
                 <DropdownMenuItem>
                     <Github className="mr-2 h-4 w-4" />
                     <span><Link href={"/github"} target='_blank'>Github</Link></span>
