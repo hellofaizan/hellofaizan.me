@@ -19,7 +19,8 @@ const Mobilenav = () => {
         <DropdownMenu>
             <DropdownMenuTrigger>
                 <div className={cn(
-                    buttonVariants({ variant: "ghost" })
+                    "px-2",
+                    buttonVariants({ variant: "ghost" }),
                 )}>
                     <ChevronDown />
                 </div>
